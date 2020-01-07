@@ -3,14 +3,14 @@ import org.apache.commons.math3.stat.descriptive.moment.StandardDeviation;
 
 import JSci.maths.statistics.TDistribution;
 
-public class Ttest {
+public class TTest {
 	
 	private double[] x;
 	
 	private double[] y;
 	StandardDeviation standardDeviation =new StandardDeviation();
 	
-	public Ttest(double[] x, double[] y) {
+	public TTest(double[] x, double[] y) {
 		super();
 		this.x = x;
 		this.y = y;

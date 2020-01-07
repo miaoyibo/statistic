@@ -4,14 +4,14 @@ import org.apache.commons.math3.stat.descriptive.moment.Variance;
 
 import JSci.maths.statistics.FDistribution;
 
-public class Ftest {
+public class FTest {
 	private double[] x;
 
 	private double[] y;
 
 	Variance variance = new Variance();
 
-	public Ftest(double[] x, double[] y) {
+	public FTest(double[] x, double[] y) {
 		super();
 		this.x = x;
 		this.y = y;
