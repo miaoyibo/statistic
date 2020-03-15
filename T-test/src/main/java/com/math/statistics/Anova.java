@@ -1,8 +1,6 @@
 package com.math.statistics;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -12,7 +10,7 @@ import org.apache.commons.math3.stat.descriptive.summary.Sum;
 
 import JSci.maths.statistics.FDistribution;
 
-public class Anovo {
+public class Anova {
 
 	Variance variance = new Variance();
 
@@ -55,7 +53,6 @@ public class Anovo {
 	public int getSumNum() {
 		int n = 0;
 		for (Entry<String, double[]> e : map.entrySet()) {
-			int length = e.getValue().length;
 			n = n + e.getValue().length;
 		}
 
