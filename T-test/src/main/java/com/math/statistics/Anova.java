@@ -25,7 +25,7 @@ public class Anova {
 	}
 
 	public Map<String, Double> getVariance() {
-		Map<String, Double> varianceMap = new HashMap<>();
+		Map<String, Double> varianceMap = new HashMap<String, Double>();
 		for (Entry<String, double[]> e : map.entrySet()) {
 			varianceMap.put(e.getKey(), variance.evaluate(e.getValue()));
 		}
@@ -33,7 +33,7 @@ public class Anova {
 	}
 
 	public Map<String, Double> getMean() {
-		Map<String, Double> meanMap = new HashMap<>();
+		Map<String, Double> meanMap = new HashMap<String, Double>();
 		for (Entry<String, double[]> e : map.entrySet()) {
 			meanMap.put(e.getKey(), meanUtil.evaluate(e.getValue()));
 		}
