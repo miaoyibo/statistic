@@ -59,6 +59,16 @@ public class TTest {
 		Double free=a/b;
 		return free.intValue();
 	}
+	/***
+	 * <p>关于TDistribution中的cumulative和probability两个方法：</p>
+	 * <p>cumulative求得是CDF值，也就是概率分布值；probability求得是PDF值，也就是概率密度值，一般情况我们用不到</p>
+	 * <p>我们把cumulative函数得到的值记为P(x<=X)，probability函数得到的值记为P(x=X)</p>
+	 * <p>当参数小于0时，会发现P(x<=X)<P(x=X),这似乎有违直觉：</p>
+	 * <p>这是因为PDF指的其实不是一个点对应的值，而是这个点附近对应的值，它是一个密度，一个区间，一个宽度无限小的区间。
+	 * <p>既然是附近，那就包括这个点的"左"，也包括"右"
+	 * <p>而CDF是PDF的积分，严谨的说，是PDF在某个区间的积分，也就是曲线下的面积，在这里就是位于点左边的面积，并不包括点右侧，所以在t分布曲线的左半部分，最终的面积值会比点对应的PDF值要小。
+	 * @return
+	 */
 	public double getPValue() {
 		int free=getDegreesOfFreedom();
 		double t=calculateTvalue();
@@ -72,4 +82,5 @@ public class TTest {
 		}
 		return p;
 	}
+
 }
