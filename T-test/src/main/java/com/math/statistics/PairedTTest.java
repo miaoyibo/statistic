@@ -54,8 +54,7 @@ public class PairedTTest {
 			sum=sum+d;
 		}
 		int n=x.length;
-		double ss=pow-Math.pow(sum,2)/n;
-		return ss;
+		return pow-Math.pow(sum,2)/n;
 	}
 	public double calculateTvalue() {
 		double sp=getStandard()/freedom;
@@ -81,13 +80,7 @@ public class PairedTTest {
 		double t=calculateTvalue();
 		TDistribution td=new TDistribution(freedom);
 		double cumulative = td.cumulative(t);
-		double p;
-		if(t>0) {
-			p=(1-cumulative)*2;
-		}else {
-			p=cumulative*2;
-		}
-		return p;
+		return t>0?(1-cumulative)*2:cumulative*2;
 	}
 	/***
 	 * 效应大小

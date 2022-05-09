@@ -74,13 +74,7 @@ public class TTest {
 		double t=calculateTvalue();
 		TDistribution td=new TDistribution(free);
 		double cumulative = td.cumulative(t);
-		double p;
-		if(t>0) {
-			p=(1-cumulative)*2;
-		}else {
-			p=cumulative*2;
-		}
-		return p;
+		return  t>0?(1-cumulative)*2:cumulative*2;
 	}
 
 }
