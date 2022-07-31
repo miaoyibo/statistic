@@ -14,7 +14,7 @@ public class TwoWayDemo {
 		double[] d3= {9,9,13,6,8};
 		double[] d4= {1,2,1,1,3};
 		double[] d5= {3,8,3,3,3};
-		double[] d6= {2,2,2,5,2};
+		double[] d6= {2,2,2,5,2}; 
 		data.add(d1);
 		data.add(d2);
 		data.add(d3);
