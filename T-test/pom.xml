@@ -22,5 +22,12 @@
 			<version>3.6.1</version>
 		</dependency>
 
+<!-- https://mvnrepository.com/artifact/com.hierynomus/smbj -->
+<dependency>
+    <groupId>com.hierynomus</groupId>
+    <artifactId>smbj</artifactId>
+    <version>0.10.0</version>
+</dependency>
+
 	</dependencies>
 </project>
