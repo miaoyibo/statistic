@@ -33,7 +33,7 @@ public class Pearson {
 	}
 	/***
 	 * 
-	 * @param flag£ºtrue=Ë«²à£¬false=µ¥²à
+	 * @param flag:true=åŒä¾§ false=å•ä¾§
 	 * @return
 	 */
 	public double getPValue(boolean flag) {
